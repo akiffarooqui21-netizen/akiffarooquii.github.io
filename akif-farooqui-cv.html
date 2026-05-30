@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)file:///C:/Users/Ahmed%20ali/Downloads/akif-farooqui-cv.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akif Farooqui — CV</title>
+<link href="./Akif Farooqui — CV_web_files/css2" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ink: #0e0e0d;
+    --ink-mid: #4a4a46;
+    --ink-soft: #9a9a94;
+    --paper: #f5f3ef;
+    --paper-warm: #ede9e2;
+    --rule: rgba(14,14,13,0.12);
+    --f-serif: 'Cormorant Garamond', Georgia, serif;
+    --f-mono: 'Geist Mono', 'Courier New', monospace;
+  }
+
+  html, body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--f-mono);
+    font-weight: 300;
+    font-size: 11.5px;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; text-decoration: none; }
+  a:hover { opacity: 0.5; }
+
+  /* ── PAGE ── */
+  .page {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 52px 64px;
+  }
+
+  /* ── TOP BAR (matches portfolio nav feel) ── */
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 0.5px solid var(--rule);
+    margin-bottom: 0;
+  }
+
+  .topbar-label {
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+
+  .topbar-date {
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+
+  /* ── HEADER ── */
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    padding: 36px 0 32px;
+    border-bottom: 0.5px solid var(--rule);
+    margin-bottom: 40px;
+  }
+
+  .header-left h1 {
+    font-family: var(--f-serif);
+    font-size: 52px;
+    font-weight: 300;
+    line-height: 1.0;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+
+  .header-left .title {
+    font-family: var(--f-mono);
+    font-size: 9.5px;
+    font-weight: 300;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+
+  .header-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 4px;
+    text-align: right;
+  }
+
+  .contact-item {
+    font-size: 10.5px;
+    color: var(--ink-mid);
+    letter-spacing: 0.02em;
+  }
+
+  /* ── BODY GRID ── */
+  .body {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 0 52px;
+  }
+
+  /* ── SECTION ── */
+  .section { display: contents; }
+
+  .section-label {
+    padding-top: 3px;
+  }
+
+  .section-label span {
+    font-family: var(--f-mono);
+    font-size: 9px;
+    font-weight: 300;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+
+  .section-content {
+    padding-bottom: 28px;
+    border-bottom: 0.5px solid var(--rule);
+    margin-bottom: 28px;
+  }
+
+  .section:last-child .section-content {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  /* ── PROFILE ── */
+  .profile-text {
+    font-family: var(--f-serif);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: var(--ink-mid);
+    font-style: italic;
+    max-width: 560px;
+    border-left: 1px solid var(--rule);
+    padding-left: 16px;
+  }
+
+  /* ── EXPERIENCE ENTRY ── */
+  .entry { margin-bottom: 0; }
+  .entry:last-child { margin-bottom: 0; }
+
+  .entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 2px;
+    gap: 16px;
+  }
+
+  .entry-role {
+    font-family: var(--f-serif);
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--ink);
+    letter-spacing: 0.01em;
+  }
+
+  .entry-date {
+    font-size: 9px;
+    color: var(--ink-soft);
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+    flex-shrink: 0;
+    text-transform: uppercase;
+  }
+
+  .entry-org {
+    font-size: 9.5px;
+    color: var(--ink-soft);
+    letter-spacing: 0.08em;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+
+  .entry-bullets {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .entry-bullets li {
+    font-size: 11px;
+    color: var(--ink-mid);
+    padding-left: 16px;
+    position: relative;
+    line-height: 1.6;
+  }
+
+  .entry-bullets li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--ink-soft);
+    font-size: 9px;
+    top: 2px;
+  }
+
+  .entry + .entry {
+    padding-top: 16px;
+    margin-top: 16px;
+    border-top: 0.5px solid var(--rule);
+  }
+
+  /* ── EDUCATION ── */
+  .edu-entry { margin-bottom: 0; }
+  .edu-entry:last-child { margin-bottom: 0; }
+
+  .edu-degree {
+    font-family: var(--f-serif);
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--ink);
+    margin-bottom: 2px;
+  }
+
+  .edu-school {
+    font-size: 9.5px;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 2px;
+  }
+
+  .edu-meta {
+    font-size: 9.5px;
+    color: var(--ink-soft);
+    margin-bottom: 4px;
+    letter-spacing: 0.04em;
+  }
+
+  .edu-focus {
+    color: var(--ink-mid);
+    font-style: italic;
+    font-family: var(--f-serif);
+    font-size: 13px;
+    line-height: 1.55;
+  }
+
+  .edu-entry + .edu-entry {
+    padding-top: 16px;
+    margin-top: 16px;
+    border-top: 0.5px solid var(--rule);
+  }
+
+  /* ── SKILLS ── */
+  .skills-group { margin-bottom: 12px; }
+  .skills-group:last-child { margin-bottom: 0; }
+
+  .skills-cat {
+    font-size: 9px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 3px;
+  }
+
+  .skills-list {
+    font-size: 11px;
+    color: var(--ink-mid);
+    line-height: 1.6;
+  }
+
+  /* ── LANGUAGES ── */
+  .lang-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 6px 0;
+    border-bottom: 0.5px solid var(--rule);
+  }
+
+  .lang-row:first-child { border-top: 0.5px solid var(--rule); }
+
+  .lang-name {
+    font-family: var(--f-serif);
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--ink);
+  }
+
+  .lang-level {
+    font-size: 9px;
+    color: var(--ink-soft);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  /* ── AVAILABILITY ── */
+  .avail-text {
+    font-size: 11px;
+    color: var(--ink-mid);
+    line-height: 1.7;
+    border-left: 1px solid var(--rule);
+    padding-left: 16px;
+  }
+
+  /* ── FOOTER ── */
+  .cv-footer {
+    margin-top: 48px;
+    padding-top: 16px;
+    border-top: 0.5px solid var(--rule);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cv-footer span {
+    font-size: 9px;
+    color: var(--ink-soft);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  /* ── PRINT ── */
+  @media print {
+    html, body { background: white; }
+    :root { --paper: white; }
+    .page { padding: 36px 48px; }
+    .topbar { display: none; }
+  }
+
+  @page { size: A4; margin: 0; }
+
+  /* ── SCREEN: add subtle shadow for web viewing ── */
+  @media screen {
+    body { padding: 40px 20px; }
+    .page {
+      background: var(--paper);
+      box-shadow: 0 1px 40px rgba(14,14,13,0.07), 0 0 0 0.5px var(--rule);
+    }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <span class="topbar-label">Curriculum Vitae</span>
+    <span class="topbar-date">2025</span>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-left">
+      <h1>Akif Farooqui</h1>
+      <p class="title">Media Artist &amp; Filmmaker</p>
+    </div>
+    <div class="header-right">
+      <a href="mailto:akiffarooqui21@gmail.com" class="contact-item">akiffarooqui21@gmail.com</a>
+      <span class="contact-item">+49 155 635 13265</span>
+      <span class="contact-item">Darmstadt, Germany</span>
+      <a href="https://www.linkedin.com/in/akiffarooquii/" class="contact-item" target="_blank">linkedin.com/in/akiffarooquii</a>
+      <!-- Add your portfolio URL below once live -->
+      <!-- <a href="https://yourname.com" class="contact-item" target="_blank">yourname.com</a> -->
+    </div>
+  </header>
+
+  <!-- BODY -->
+  <div class="body">
+
+    <!-- PROFILE -->
+    <div class="section">
+      <div class="section-label"><span>Profile</span></div>
+      <div class="section-content">
+        <p class="profile-text">
+          Interdisciplinary media artist and filmmaker with hands-on experience in film production, sound recording, photography, and exhibition curation. Background spans museum exhibitions, cultural events, branded content, and independent film. Currently completing an MA in International Media Cultural Work in Germany.
+        </p>
+      </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="section">
+      <div class="section-label"><span>Experience</span></div>
+      <div class="section-content">
+
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-role">Sound Recordist · Editor · Curatorial Assistant</span>
+            <span class="entry-date">06 – 12 / 2025</span>
+          </div>
+          <div class="entry-org">20 Years of the Darmstadt Music Prize — Centralstation, Darmstadt</div>
+          <ul class="entry-bullets">
+            <li>Recorded and edited audio features for Music Prize awardees</li>
+            <li>Supported curatorial development of a hybrid exhibition merging physical objects and digital media</li>
+            <li>Implemented QR-based digital storytelling for audience interaction</li>
+            <li>Assisted with exhibition setup, coordination, and documentation</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-role">Co-Curator · Media Art Assistant</span>
+            <span class="entry-date">06 – 07 / 2025</span>
+          </div>
+          <div class="entry-org">Subject: Résumés — Museum Schloss Fechenbach, Dieburg</div>
+          <ul class="entry-bullets">
+            <li>Co-curated an international media art exhibition featuring 13 interdisciplinary works</li>
+            <li>Assisted in selection, installation, and technical setup of time-based and digital media</li>
+            <li>Coordinated exhibition layout, visitor experience, and artist-institution mediation</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-role">Founder &amp; Creative Director</span>
+            <span class="entry-date">2020 – Present</span>
+          </div>
+          <div class="entry-org">Coffee &amp; Cheese Studio — Pakistan (Freelance)</div>
+          <ul class="entry-bullets">
+            <li>Directed and produced short films, documentaries, music videos, and photography projects</li>
+            <li>Managed full production workflows from concept to post-production</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-role">Co-Founder &amp; Producer</span>
+            <span class="entry-date">2022 – 2024</span>
+          </div>
+          <div class="entry-org">ScapeGoat Films and Media — Pakistan</div>
+          <ul class="entry-bullets">
+            <li>Produced branded audiovisual content for international clients including Infinix, Interloop, and Rastah</li>
+            <li>Coordinated pre-production, shoots, and post-production delivery across creative teams</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-role">Co-Founder &amp; Managing Director</span>
+            <span class="entry-date">2022 – Present</span>
+          </div>
+          <div class="entry-org">Merriment — Pakistan (Remote)</div>
+          <ul class="entry-bullets">
+            <li>Managed daily operations, budgeting, and production planning</li>
+            <li>Developed brand identity, visual content, and social media strategy</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="section">
+      <div class="section-label"><span>Education</span></div>
+      <div class="section-content">
+
+        <div class="edu-entry">
+          <div class="edu-degree">MA — International Media Cultural Work</div>
+          <div class="edu-school">Hochschule Darmstadt — University of Applied Sciences</div>
+          <div class="edu-meta">04 / 2025 – Present · Darmstadt, Germany</div>
+          <div class="edu-focus">Media art, soundscape composition, exhibition curation, sustainability and inclusion in cultural institutions, socially engaged media practice</div>
+        </div>
+
+        <div class="edu-entry">
+          <div class="edu-degree">BFA — Film &amp; Television Production</div>
+          <div class="edu-school">National College of Arts</div>
+          <div class="edu-meta">2016 – 2020 · Lahore, Pakistan</div>
+          <div class="edu-focus">Narrative filmmaking, experimental visual storytelling, film production</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ACADEMIC PRACTICE -->
+    <div class="section">
+      <div class="section-label"><span>Academic Practice</span></div>
+      <div class="section-content">
+
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-role">Artist — Scenography, Sound &amp; Technical Stage Design</span>
+            <span class="entry-date">2016 – 2018</span>
+          </div>
+          <div class="entry-org">National College of Arts · Theatre &amp; Performance Productions, Lahore</div>
+          <ul class="entry-bullets">
+            <li>Contributed as artist and technician across set design, spatial scenography, and live sound for Urdu and English theatre, mime, and music performances</li>
+            <li>Designed and built stage environments integrating visual, sonic, and structural elements into a unified performance space</li>
+            <li>Operated technical sound systems and coordinated stage logistics between performers, directors, and design teams</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="section">
+      <div class="section-label"><span>Skills</span></div>
+      <div class="section-content">
+
+        <div class="skills-group">
+          <div class="skills-cat">Film &amp; Media</div>
+          <div class="skills-list">Scriptwriting · Cinematography · Photography · Sound Recording · Post-Production</div>
+        </div>
+
+        <div class="skills-group">
+          <div class="skills-cat">Exhibition &amp; Cultural</div>
+          <div class="skills-list">Exhibition Assistance · Media Art Installation · Curation Support · Museum Mediation · Set Design</div>
+        </div>
+
+        <div class="skills-group">
+          <div class="skills-cat">Tools</div>
+          <div class="skills-list">DaVinci Resolve · Adobe Illustrator · Reaper · Final Draft · Canva · Miro · MS Office</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- LANGUAGES -->
+    <div class="section">
+      <div class="section-label"><span>Languages</span></div>
+      <div class="section-content">
+        <div class="lang-row">
+          <span class="lang-name">Urdu</span>
+          <span class="lang-level">Native</span>
+        </div>
+        <div class="lang-row">
+          <span class="lang-name">English</span>
+          <span class="lang-level">Fluent</span>
+        </div>
+        <div class="lang-row">
+          <span class="lang-name">German</span>
+          <span class="lang-level">Basic — A1</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- AVAILABILITY -->
+    <div class="section">
+      <div class="section-label"><span>Availability</span></div>
+      <div class="section-content">
+        <p class="avail-text">MA student in Germany — eligible for internship, Werkstudent, and part-time employment. Open to roles in photography, film, media production, museums, and cultural institutions.</p>
+      </div>
+    </div>
+
+  </div><!-- /body -->
+
+  <!-- FOOTER -->
+  <div class="cv-footer">
+    <span>Akif Farooqui — CV 2025</span>
+    <span>Darmstadt, Germany</span>
+  </div>
+
+</div><!-- /page -->
+
+
+</body></html>
